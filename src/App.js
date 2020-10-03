@@ -13,7 +13,7 @@ import Register from './views/Register'
 
 export default function App() {
   return (
-    <Router className="app">
+    <Router>
       <Switch>
         <Route path="/" exact>
           <Entry />
