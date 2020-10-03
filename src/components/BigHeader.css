@@ -1,0 +1,13 @@
+.bg-gradient {
+  background-image: linear-gradient(to right, #EF3B3B , #152B71);
+  height: 150px;
+  margin-bottom: 20px;
+  transform: skewY(-4deg);
+  transform-origin: bottom left;
+  padding: 55px 50px;
+  text-align: center;
+}
+
+.bg-gradient h3 {
+  transform: skewY(4deg);
+}

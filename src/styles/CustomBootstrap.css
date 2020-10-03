@@ -1,0 +1,19 @@
+.btn-primary {
+  background-color: #EF3B3B;
+  border-color: #EF3B3B;
+}
+
+.btn-outline-primary {
+  border-color: #EF3B3B;
+  color: #EF3B3B;
+}
+
+.btn-secondary {
+  background-color: #152B71;
+  border-color: #152B71;
+}
+
+.btn-outline-secondary {
+  border-color: #152B71;
+  color: #152B71;
+}

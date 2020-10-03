@@ -6,36 +6,26 @@ import {
   Link
 } from "react-router-dom";
 
-import Login from './views/Login'
+import './App.css'
+
 import Entry from './views/Entry'
+import Login from './views/Login'
+import Register from './views/Register'
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/entrada">Entry</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/entrada">
-            <Entry />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/" exact>
+          <Entry />
+        </Route>
+        <Route path="/cadastro">
+          <Register />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
     </Router>
   );
 }
