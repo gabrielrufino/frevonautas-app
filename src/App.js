@@ -14,6 +14,7 @@ import Login from './views/Login'
 import Register from './views/Register'
 import Topic from './views/Topic'
 import Question from './views/Question'
+import Notifications from './views/Notifications'
 
 export default function App() {
   return (
@@ -39,6 +40,9 @@ export default function App() {
         </Route>
         <Route path="/app/expedicoes/:expedition/topicos/:topic/questao">
           <Question />
+        </Route>
+        <Route path="/app/notificacoes">
+          <Notifications />
         </Route>
       </Switch>
     </Router>
