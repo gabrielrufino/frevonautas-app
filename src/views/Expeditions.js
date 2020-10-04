@@ -41,7 +41,7 @@ export default function Expeditions() {
 
       </Container>
 
-      <BottomNavigator />
+      <BottomNavigator selected="expeditions" />
     </>
   )
 }
