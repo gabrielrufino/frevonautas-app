@@ -19,6 +19,7 @@ import Question from './views/Question'
 import Register from './views/Register'
 import Settings from './views/Settings'
 import Topic from './views/Topic'
+import Success from './views/Success'
 
 export default function App() {
   return (
@@ -53,6 +54,9 @@ export default function App() {
         </Route>
         <Route path="/app/games/mito-ou-verdade">
           <MythOrTruth />
+        </Route>
+        <Route path="/app/games/sucesso">
+          <Success />
         </Route>
         <Route path="/app/notificacoes">
           <Notifications />

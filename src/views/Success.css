@@ -1,0 +1,6 @@
+.success {
+  height: 100% !important;
+  min-height: 100% !important;
+  background-image: url('https://frevonautas.mybluemix.net/images/background-2');
+  background-size: cover;
+}
