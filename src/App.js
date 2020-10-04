@@ -10,6 +10,7 @@ import './App.css'
 import Entry from './views/Entry'
 import Expeditions from './views/Expeditions'
 import Expedition from './views/Expedition'
+import Fail from './views/Fail'
 import Games from './views/Games'
 import Login from './views/Login'
 import MythOrTruth from './views/MythOrTruth'
@@ -57,6 +58,9 @@ export default function App() {
         </Route>
         <Route path="/app/games/sucesso">
           <Success />
+        </Route>
+        <Route path="/app/games/falha">
+          <Fail />
         </Route>
         <Route path="/app/notificacoes">
           <Notifications />
