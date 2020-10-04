@@ -10,6 +10,7 @@ import './App.css'
 import Entry from './views/Entry'
 import Expeditions from './views/Expeditions'
 import Expedition from './views/Expedition'
+import Games from './views/Games'
 import Login from './views/Login'
 import Notifications from './views/Notifications'
 import Question from './views/Question'
@@ -41,6 +42,9 @@ export default function App() {
         </Route>
         <Route path="/app/expedicoes/:expedition/topicos/:topic/questao">
           <Question />
+        </Route>
+        <Route path="/app/games">
+          <Games />
         </Route>
         <Route path="/app/notificacoes">
           <Notifications />
