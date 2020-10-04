@@ -1,13 +1,13 @@
 .presentation {
   height: 100% !important;
   min-height: 100% !important;
-  background-image:url('https://frevonautas.mybluemix.net/images/background-2');
+  background-image: url('https://frevonautas.mybluemix.net/images/background-2');
   background-size: cover;
 }
 
 .bg-stars {
   height: 100% !important;
   min-height: 100% !important;
-  background-image:url('https://frevonautas.mybluemix.net/images/background-inicial');
+  background-image: url('https://frevonautas.mybluemix.net/images/background-inicial');
   background-size: cover;
 }

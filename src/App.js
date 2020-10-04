@@ -12,6 +12,7 @@ import Expeditions from './views/Expeditions'
 import Expedition from './views/Expedition'
 import Games from './views/Games'
 import Login from './views/Login'
+import MythOrTruth from './views/MythOrTruth'
 import Notifications from './views/Notifications'
 import Presentation from './views/Presentation'
 import Question from './views/Question'
@@ -47,8 +48,11 @@ export default function App() {
         <Route path="/app/expedicoes/:expedition/topicos/:topic/questao">
           <Question />
         </Route>
-        <Route path="/app/games">
+        <Route path="/app/games" exact>
           <Games />
+        </Route>
+        <Route path="/app/games/mito-ou-verdade">
+          <MythOrTruth />
         </Route>
         <Route path="/app/notificacoes">
           <Notifications />
