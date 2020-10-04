@@ -1,18 +1,21 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { faArrowLeft, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useHistory } from 'react-router-dom'
+import { faArrowLeft, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 
 import './Header.css'
 
 export default function Header() {
+  const history = useHistory()
+
   return (
     <div className="header fixed-top shadow-lg">
       <Container>
         <Row>
           <Col className="text-left text-light">
             <div className="mt-2" />
-            <FontAwesomeIcon size="lg" icon={faArrowLeft} />
+            <FontAwesomeIcon onClick={() => history.goBack()} size="lg" icon={faArrowLeft} />
           </Col>
           <Col className="text-center">
             <div className="mt-3" />
