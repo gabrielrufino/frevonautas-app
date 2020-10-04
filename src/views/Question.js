@@ -41,7 +41,7 @@ export default function Question() {
         <h4 className="text-secondary">Agora vamos pôr em prática o que aprendemos</h4>
       </Container>
 
-      <BottomNavigator />
+      <BottomNavigator selected="expeditions" />
     </>
   )
 }
