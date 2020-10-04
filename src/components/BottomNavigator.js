@@ -7,7 +7,7 @@ import './BottomNavigator.css'
 
 export default function BottomNavigator() {
   return (
-    <Row className="bottom-navigator fixed-bottom text-light text-center">
+    <Row className="bottom-navigator fixed-bottom text-light text-center pt-3">
       <Col>
         <FontAwesomeIcon size="lg" icon={faBookOpen} />
       </Col>

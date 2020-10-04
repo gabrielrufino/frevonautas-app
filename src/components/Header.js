@@ -7,7 +7,7 @@ import './Header.css'
 
 export default function Header() {
   return (
-    <div className="header shadow-lg">
+    <div className="header fixed-top shadow-lg">
       <Container>
         <Row>
           <Col className="text-left text-light">

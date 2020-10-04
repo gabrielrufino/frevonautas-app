@@ -17,3 +17,15 @@
   border-color: #152B71;
   color: #152B71;
 }
+
+.border-primary {
+  border-color: #EF3B3B !important;
+}
+
+.text-primary {
+  color: #EF3B3B !important;
+}
+
+.text-4F6977 {
+  color: #4F6977;
+}
