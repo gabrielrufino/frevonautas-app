@@ -5,19 +5,28 @@ import { useHistory } from 'react-router-dom'
 import BigHeader from '../components/BigHeader'
 import Splash from '../components/Splash'
 
+import './Entry.css'
+
 export default function Entry() {
-  const [splashImage, setSplashImage] = useState('')
-  const [showSplash, setShowSplash] = useState(false)
+  const [splashImage, setSplashImage] = useState('https://frevonautas.mybluemix.net/images/nasa')
+  const [showSplash, setShowSplash] = useState(true)
 
   const history = useHistory()
 
   useEffect(function () {
+    setTimeout(function () {
+      setSplashImage('https://frevonautas.mybluemix.net/images/frevonautas')
+
+      setTimeout(function () {
+        setShowSplash(false)
+      }, 3000)
+    }, 3000)
   }, [])
 
   return (
-    <>
+    <div className="entry">
       {showSplash && (
-        <Splash />
+        <Splash src={splashImage} />
       )}
 
       {!showSplash && (
@@ -42,6 +51,6 @@ export default function Entry() {
           </Container>
         </>
       )}
-    </>
+    </div>
   )
 }

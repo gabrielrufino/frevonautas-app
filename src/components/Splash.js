@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Splash.css'
 
-export default function Splash() {
+export default function Splash({src}) {
   return (
-    <div className="bg">
-
+    <div className="splash">
+      <img src={src} alt="Logo da Splash" />
     </div>
   )
 }
