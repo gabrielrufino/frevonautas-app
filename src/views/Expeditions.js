@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Container, Form } from 'react-bootstrap'
 
 import BottomNavigator from '../components/BottomNavigator'
@@ -8,6 +9,17 @@ import Header from '../components/Header'
 export default function Expeditions() {
   const [expeditions, setExpeditions] = useState([])
   const [search, setSearch] = useState([])
+
+  useEffect(function () {
+    axios
+      .get('https://frevonautas.mybluemix.net/expedicoes')
+      .then(({ data }) => {
+        setExpeditions(data.expedicoes)
+      })
+      .catch(function () {
+        alert('Houve um erro inesperado')
+      })
+  }, [])
 
   return (
     <>
@@ -27,18 +39,15 @@ export default function Expeditions() {
         <h2 className="text-4F6977">Expedições: </h2>
         <hr />
 
-        <ExpeditionCard
-          img="https://frevonautas.mybluemix.net/images/terra"
-          name="Tecnologias"
-          description="A NASA e inovações cotidianas"
-        />
 
-        <ExpeditionCard
-          img="https://frevonautas.mybluemix.net/images/terra"
-          name="Tecnologias"
-          description="A NASA e inovações cotidianas"
-        />
-
+        {expeditions.map(expedition => (
+          <ExpeditionCard
+            key={expedition.name}
+            img={expedition.image}
+            name={expedition.name}
+            description={expedition.description}
+          />
+        ))}
       </Container>
 
       <BottomNavigator selected="expeditions" />
