@@ -1,10 +1,13 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 
 import Header from '../components/Header'
 import './MythOrTruth.css'
 
 export default function MythOrTruth() {
+  const history = useHistory()
+ 
   return (
     <div className="myth-or-truth">
       <Header />
@@ -17,10 +20,10 @@ export default function MythOrTruth() {
         </div>
 
         <Row>
-          <Col className="p-2">
+          <Col className="p-2" onClick={() => history.push('/app/games/sucesso')}>
             <img className="w-100" src="https://frevonautas.mybluemix.net/games/verdade" alt="Verdade" />
           </Col>
-          <Col className="p-2">
+          <Col className="p-2" onClick={() => history.push('/app/games/falha')}>
             <img className="w-100" src="https://frevonautas.mybluemix.net/games/mito" alt="Mito" />
           </Col>
         </Row>
