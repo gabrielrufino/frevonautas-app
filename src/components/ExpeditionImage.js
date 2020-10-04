@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function ExpeditionImage({img, title}) {
+export default function ExpeditionImage({img, title, small}) {
   return (
     <div
       className="mb-3"
       style={{
         width: '100%',
-        height: '150px',
+        height: small ? '100px' : '150px',
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover'
       }}

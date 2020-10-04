@@ -13,6 +13,7 @@ import Expedition from './views/Expedition'
 import Login from './views/Login'
 import Register from './views/Register'
 import Topic from './views/Topic'
+import Question from './views/Question'
 
 export default function App() {
   return (
@@ -33,8 +34,11 @@ export default function App() {
         <Route path="/app/expedicoes/:expedition" exact>
           <Expedition />
         </Route>
-        <Route path="/app/expedicoes/:expedition/topicos/:topic">
+        <Route path="/app/expedicoes/:expedition/topicos/:topic" exact>
           <Topic />
+        </Route>
+        <Route path="/app/expedicoes/:expedition/topicos/:topic/questao">
+          <Question />
         </Route>
       </Switch>
     </Router>

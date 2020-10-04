@@ -28,7 +28,6 @@ export default function Expedition() {
   return (
     <>
       <Header />
-
       <div className="my-5" />
       <ExpeditionImage
         img="https://frevonautas.mybluemix.net/images/terra"

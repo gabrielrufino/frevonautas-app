@@ -2,14 +2,20 @@ import React from 'react'
 import { Button, Container, Row, Col } from 'react-bootstrap'
 
 import BottomNavigator from '../components/BottomNavigator'
+import ExpeditionImage from '../components/ExpeditionImage'
 import Header from '../components/Header'
 
 export default function Topic() {
   return (
     <>
       <Header />
+      <div className="my-5" />
+      <ExpeditionImage
+        img="https://frevonautas.mybluemix.net/images/terra"
+        title="Terra"
+        small
+      />
 
-      <div className="mt-5 pt-5" />
       <Container>
         <h3 className="text-center">História da NASA</h3>
 
