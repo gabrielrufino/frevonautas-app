@@ -12,6 +12,7 @@ import Expeditions from './views/Expeditions'
 import Expedition from './views/Expedition'
 import Login from './views/Login'
 import Register from './views/Register'
+import Topic from './views/Topic'
 
 export default function App() {
   return (
@@ -29,8 +30,11 @@ export default function App() {
         <Route path="/app" exact>
           <Expeditions />
         </Route>
-        <Route path="/app/expedicoes/:expedition">
+        <Route path="/app/expedicoes/:expedition" exact>
           <Expedition />
+        </Route>
+        <Route path="/app/expedicoes/:expedition/topicos/:topic">
+          <Topic />
         </Route>
       </Switch>
     </Router>

@@ -18,6 +18,11 @@
   color: #152B71;
 }
 
+.btn-grey {
+  background-color: #c4c4c4;
+  color: #000;
+}
+
 .border-primary {
   border-color: #EF3B3B !important;
 }
