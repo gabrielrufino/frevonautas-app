@@ -11,10 +11,11 @@ import Entry from './views/Entry'
 import Expeditions from './views/Expeditions'
 import Expedition from './views/Expedition'
 import Login from './views/Login'
-import Register from './views/Register'
-import Topic from './views/Topic'
-import Question from './views/Question'
 import Notifications from './views/Notifications'
+import Question from './views/Question'
+import Register from './views/Register'
+import Settings from './views/Settings'
+import Topic from './views/Topic'
 
 export default function App() {
   return (
@@ -43,6 +44,9 @@ export default function App() {
         </Route>
         <Route path="/app/notificacoes">
           <Notifications />
+        </Route>
+        <Route path="/app/configuracoes">
+          <Settings />
         </Route>
       </Switch>
     </Router>
