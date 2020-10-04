@@ -13,6 +13,7 @@ import Expedition from './views/Expedition'
 import Games from './views/Games'
 import Login from './views/Login'
 import Notifications from './views/Notifications'
+import Presentation from './views/Presentation'
 import Question from './views/Question'
 import Register from './views/Register'
 import Settings from './views/Settings'
@@ -20,9 +21,12 @@ import Topic from './views/Topic'
 
 export default function App() {
   return (
-    <Router>
+    <Router className="h-100">
       <Switch>
         <Route path="/" exact>
+          <Presentation />
+        </Route>
+        <Route path="/entrada" exact>
           <Entry />
         </Route>
         <Route path="/cadastro">
