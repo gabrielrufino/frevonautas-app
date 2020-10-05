@@ -1,0 +1,11 @@
+.bottom-navigator {
+  background-color: #900505;
+  height: 50px;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-option {
+  color: #aaa;
+}

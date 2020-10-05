@@ -1,0 +1,44 @@
+.btn-primary {
+  background-color: #EF3B3B;
+  border-color: #EF3B3B;
+}
+
+.btn-outline-primary {
+  border-color: #EF3B3B;
+  color: #EF3B3B;
+}
+
+.btn-secondary {
+  background-color: #152B71;
+  border-color: #152B71;
+}
+
+.btn-outline-secondary {
+  border-color: #152B71;
+  color: #152B71;
+}
+
+.btn-grey {
+  background-color: #c4c4c4;
+  color: #000;
+}
+
+.border-primary {
+  border-color: #EF3B3B !important;
+}
+
+.text-primary {
+  color: #EF3B3B !important;
+}
+
+.text-secondary {
+  color: #152B71 !important;
+}
+
+.text-4F6977 {
+  color: #4F6977;
+}
+
+.badge-secondary {
+  background-color: #152B71;
+}
