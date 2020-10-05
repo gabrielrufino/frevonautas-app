@@ -12,7 +12,7 @@ export default function Entry() {
   return (
     <div className="entry">
       <BigHeader>
-        <h3 className="text-light">Bem vindo ao AppNASA</h3>
+        <h3 className="text-light">Bem vindo ao Missão Terra</h3>
       </BigHeader>
 
       <div className="my-5 py-4" />
